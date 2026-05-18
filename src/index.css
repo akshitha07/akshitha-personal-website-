@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Alata", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Times New Roman", "Times", serif;
+
+  --color-brand-blue: #413f63;
+  --color-brand-dark: #413f63;
+  --color-brand-gray: #64748B;
+  --color-brand-surface: #FFFFFF;
+}
+
+.bg-dot-grid {
+  background-image: radial-gradient(circle, #cbd5e1 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+@layer base {
+  body {
+    @apply font-sans text-brand-dark bg-white antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display tracking-tight text-brand-dark;
+  }
+}
