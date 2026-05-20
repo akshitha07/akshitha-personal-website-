@@ -2,18 +2,47 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Alata", ui-sans-serif, system-ui, sans-serif;
+   --font-sans: 'Geist', 'Geist Fallback';
+  --font-mono: 'Geist Mono', 'Geist Mono Fallback';
   --font-display: "Times New Roman", "Times", serif;
 
-  --color-brand-blue: #413f63;
-  --color-brand-dark: #413f63;
+  --color-brand-blue: #685fa7;
+  --color-brand-dark: #685fa7;
+  --color-brand-pink: #f6a0b3;
   --color-brand-gray: #64748B;
   --color-brand-surface: #FFFFFF;
 }
+.gradient-text {
+  background: linear-gradient(
+    135deg,
+    #4F46E5 0%,
+    #8B5CF6 30%,
+    #C084FC 60%,
+    #F9A8D4 85%,
+    #FFD6A5 100%
+  );
 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
 .bg-dot-grid {
   background-image: radial-gradient(circle, #cbd5e1 1px, transparent 1px);
   background-size: 24px 24px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 40s linear infinite;
 }
 
 @layer base {

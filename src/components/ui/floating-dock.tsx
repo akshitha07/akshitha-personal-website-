@@ -108,7 +108,9 @@ const FloatingDockDesktop = ({
       )}
     >
       {items.map((item) => (
-        <IconContainer mouseX={mouseX} key={item.title} {...item} />
+        <div key={item.title}>
+          <IconContainer mouseX={mouseX} {...item} />
+        </div>
       ))}
     </motion.div>
   );
@@ -191,7 +193,7 @@ function IconContainer({
         <motion.div
           style={{ width: widthIcon, height: heightIcon }}
           className="flex items-center justify-center transition-colors text-brand-dark"
-          animate={{ color: hovered ? "#413f63" : "currentColor" }}
+          animate={{ color: hovered ? "#685fa7" : "currentColor" }}
         >
           {icon}
         </motion.div>
