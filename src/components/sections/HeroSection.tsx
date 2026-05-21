@@ -90,7 +90,7 @@ export function HeroSection() {
         className="flex justify-center"
       >
         <img
-          src="/images/img1.png"
+          src="https://res.cloudinary.com/dwliqhmpe/image/upload/v1779351438/img1_seibwf.png"
           alt="Profile"
           className="w-[450px] md:w-[550px] "
         />

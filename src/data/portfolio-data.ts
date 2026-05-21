@@ -241,7 +241,7 @@ export const PROJECTS: Project[] = [
       "Employee Lifecycle Tracking",
       "Role-based Access Control",
     ],
-   image: "/images/zenploy-app.png",
+   image: "https://res.cloudinary.com/dwliqhmpe/image/upload/v1779351435/zenploy-app_w2vixj.jpg",
 
   github: "https://github.com/yourusername/zenploy-hrms",
 
@@ -269,7 +269,7 @@ export const PROJECTS: Project[] = [
       "Modular UI Widgets",
       "Optimized Data Tables",
     ],
-    image: "/images/Dabang.png",
+    image: "https://res.cloudinary.com/dwliqhmpe/image/upload/v1779351434/Dabang_tkivoi.png",
     // subCards: [
     //   {
     //     title: "Performance Metrics",
@@ -363,7 +363,7 @@ export const PROJECTS: Project[] = [
     "Reusable Components",
     "Clean Navigation Flow"
   ],
-  image: "/images/protax.png",
+  image: "https://res.cloudinary.com/dwliqhmpe/image/upload/v1779351434/protax_dstlit.jpg",
 },
 ];
 
