@@ -51,17 +51,34 @@ export function HeroSection() {
             View Case Studies <ChevronRight size={20} />
           </button>
 
-          <div className="flex items-center gap-4 px-6 py-4 bg-neutral-100 rounded-xl border border-neutral-200">
-            <a href="#">
-              <Github size={22} />
-            </a>
-            <a href="#">
-              <Linkedin size={22} />
-            </a>
-            <a href="#">
-              <Mail size={22} />
-            </a>
-          </div>
+<div className="flex items-center gap-4 px-6 py-4 bg-neutral-100 rounded-xl border border-neutral-200">
+
+  <a
+    href="https://github.com/akshitha07"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:scale-110 transition duration-300"
+  >
+    <Github size={22} />
+  </a>
+
+  <a
+    href="https://www.linkedin.com/in/m-akshitha-36b69124b/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:scale-110 transition duration-300"
+  >
+    <Linkedin size={22} />
+  </a>
+
+  <a
+    href="mailto:akshithamekala04@gmail.com"
+    className="hover:scale-110 transition duration-300"
+  >
+    <Mail size={22} />
+  </a>
+
+</div>
         </div>
       </motion.div>
 

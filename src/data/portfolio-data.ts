@@ -63,7 +63,7 @@ export const PROJECT_ANALYSIS: Record<string, AnalysisData> = {
       label: "Reduction in task turnaround time through improved workflow visualization.",
     },
   },
-  "Aforro Analytics Dashboard": {
+  "Dabang Analytics Dashboard": {
     show: [
       "Responsive admin dashboard layout",
       "Analytics and KPI cards",
@@ -93,7 +93,138 @@ export const PROJECT_ANALYSIS: Record<string, AnalysisData> = {
       value: "Enterprise",
       label: "Ready dashboard system with scalable architecture and optimized UI workflows.",
     },
+  }, 
+
+  "Raider Analytics Dashboard": {
+  show: [
+    "Enterprise analytics dashboard with real-time insights",
+    "Dynamic dashboard widgets and KPI cards",
+    "Advanced state management with Zustand",
+    "Responsive admin dashboard layouts",
+    "Data visualization and analytics reporting",
+
+    "Optimized rendering for large datasets",
+    "Scalable dashboard component architecture",
+    "Interactive user experience",
+  ],
+  explain: {
+    problem:
+      "Managing large amounts of dashboard data while maintaining performance and responsiveness.",
+    uiDecisions:
+      "Implemented a card-based dashboard layout with clear visual hierarchy and easy navigation.",
+    componentStructure:
+      "Designed modular widgets, charts, and data components for scalability and reusability.",
+    responsiveness:
+      "Created adaptive dashboard layouts for different screen sizes without affecting readability.",
+    stateHandling:
+      "Used Zustand for centralized state management and efficient updates across dashboard components.",
+    challengesSolved:
+      "Reduced unnecessary re-renders and optimized dynamic data handling for better performance.",
   },
+  mention: ["React", "Node.js", "MongoDB", "Zustand"],
+  outcome: {
+    value: "50%",
+    label: "Improvement in dashboard performance and faster data interaction experience.",
+  },
+},
+
+"ZenBeta Business Platform": {
+  show: [
+    "Modern business platform with responsive user experience",
+    "SEO optimized pages for better visibility",
+    "Reusable component-based architecture",
+    "Performance-focused page rendering",
+    "Scalable UI system with clean navigation",
+
+    "Responsive layouts across devices",
+    "Smooth user interaction patterns",
+    "Optimized loading and rendering strategy",
+  ],
+  explain: {
+    problem:
+      "Creating a scalable business platform while maintaining performance, responsiveness, and clean user experiences across multiple pages.",
+    uiDecisions:
+      "Designed a clean and modern interface with clear navigation and structured layouts to improve usability.",
+    componentStructure:
+      "Implemented reusable components for cards, navigation, buttons, and content sections to support scalability.",
+    responsiveness:
+      "Built adaptive layouts using responsive design techniques for desktop, tablet, and mobile screens.",
+    stateHandling:
+      "Managed UI interactions and component behavior efficiently while keeping the architecture lightweight.",
+    challengesSolved:
+      "Improved performance through optimized rendering and reusable UI patterns while maintaining visual consistency.",
+  },
+  mention: ["Next.js", "React", "Tailwind CSS", "TypeScript"],
+  outcome: {
+    value: "35%",
+    label: "Improvement in page performance and user engagement through optimized rendering.",
+  },
+},
+"HardCash Financial Platform": {
+  show: [
+    "Interactive financial services platform",
+    "Responsive and scalable frontend architecture",
+    "Reusable UI components",
+    "Modern navigation experience",
+    "User-centered design implementation",
+
+    "Smooth interaction patterns",
+    "Consistent design system approach",
+    "Clean component hierarchy",
+  ],
+  explain: {
+    problem:
+      "Building a responsive financial platform while maintaining consistency and usability across multiple pages.",
+    uiDecisions:
+      "Designed structured layouts with strong visual hierarchy to simplify user interactions.",
+    componentStructure:
+      "Built reusable sections and UI components for maintainability and future feature expansion.",
+    responsiveness:
+      "Implemented responsive layouts to ensure seamless experiences across devices.",
+    stateHandling:
+      "Managed component interactions efficiently to maintain predictable UI behavior.",
+    challengesSolved:
+      "Created reusable frontend structures while maintaining design consistency and smooth interactions.",
+  },
+  mention: ["React", "Tailwind CSS", "JavaScript"],
+  outcome: {
+    value: "30%",
+    label: "Increase in user interaction through improved navigation and responsive UI.",
+  },
+},
+
+"ProTax Service Platform": {
+  show: [
+    "Professional tax and business service platform",
+    "Responsive service management interface",
+    "Scalable component architecture",
+    "Clean user navigation system",
+    "Accessibility-focused design approach",
+
+    "Reusable frontend components",
+    "Optimized user workflow",
+    "Responsive layouts for all devices",
+  ],
+  explain: {
+    problem:
+      "Managing multiple service workflows while keeping the user interface simple and easy to navigate.",
+    uiDecisions:
+      "Used a clean and structured interface with intuitive navigation to reduce user confusion.",
+    componentStructure:
+      "Created reusable cards, forms, and service sections for scalability.",
+    responsiveness:
+      "Ensured smooth experiences across mobile, tablet, and desktop screens.",
+    stateHandling:
+      "Handled user interactions and component updates efficiently.",
+    challengesSolved:
+      "Maintained UI consistency while supporting multiple service-related workflows.",
+  },
+  mention: ["React", "Tailwind CSS", "JavaScript"],
+  outcome: {
+    value: "40%",
+    label: "Improved service accessibility and navigation efficiency.",
+  },
+},
 };
 
 export const PROJECTS: Project[] = [
@@ -110,7 +241,11 @@ export const PROJECTS: Project[] = [
       "Employee Lifecycle Tracking",
       "Role-based Access Control",
     ],
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800",
+   image: "/images/zenploy-app.png",
+
+  github: "https://github.com/yourusername/zenploy-hrms",
+
+  live: "https://zenploy.vercel.app"
   },
   {
     title: "Kanban Performance Engine",
@@ -123,7 +258,7 @@ export const PROJECTS: Project[] = [
     image: "https://images.unsplash.com/photo-1540350394557-8d14678e7f91?auto=format&fit=crop&q=80&w=800",
   },
   {
-    title: "Aforro Analytics Dashboard",
+    title: "Dabang Analytics Dashboard",
     description: "Responsive sales and admin management system built with React, TypeScript, and Tailwind CSS.",
     longDescription:
       "A modern analytics platform developed to simulate enterprise reporting. Focused on visual business metrics through charts, activity sections, and scalable UI architecture.",
@@ -134,35 +269,102 @@ export const PROJECTS: Project[] = [
       "Modular UI Widgets",
       "Optimized Data Tables",
     ],
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
-    subCards: [
-      {
-        title: "Performance Metrics",
-        img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=600",
-        desc: "Real-time tracking of key business performance indicators.",
-      },
-      {
-        title: "Sales Analytics",
-        img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=600",
-        desc: "Detailed breakdowns of sales trends and revenue growth.",
-      },
-      {
-        title: "User Management",
-        img: "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80&w=600",
-        desc: "Scalable admin tools for managing enterprise user roles.",
-      },
-      {
-        title: "Reporting Engine",
-        img: "https://images.unsplash.com/photo-1543286386-713bdd548da4?auto=format&fit=crop&q=80&w=600",
-        desc: "Automated generation of complex business intelligence reports.",
-      },
-      {
-        title: "Activity Monitoring",
-        img: "https://images.unsplash.com/photo-1504868584819-f8e90526354a?auto=format&fit=crop&q=80&w=600",
-        desc: "Live stream of system-wide activities and audit logs.",
-      },
-    ],
+    image: "/images/Dabang.png",
+    // subCards: [
+    //   {
+    //     title: "Performance Metrics",
+    //     img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=600",
+    //     desc: "Real-time tracking of key business performance indicators.",
+    //   },
+    //   {
+    //     title: "Sales Analytics",
+    //     img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=600",
+    //     desc: "Detailed breakdowns of sales trends and revenue growth.",
+    //   },
+    //   {
+    //     title: "User Management",
+    //     img: "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80&w=600",
+    //     desc: "Scalable admin tools for managing enterprise user roles.",
+    //   },
+    //   {
+    //     title: "Reporting Engine",
+    //     img: "https://images.unsplash.com/photo-1543286386-713bdd548da4?auto=format&fit=crop&q=80&w=600",
+    //     desc: "Automated generation of complex business intelligence reports.",
+    //   },
+    //   {
+    //     title: "Activity Monitoring",
+    //     img: "https://images.unsplash.com/photo-1504868584819-f8e90526354a?auto=format&fit=crop&q=80&w=600",
+    //     desc: "Live stream of system-wide activities and audit logs.",
+    //   },
+    // ],
+    github: "https://github.com/yourusername/zenploy-hrms",
+
+  live: "https://zenploy.vercel.app"
   },
+
+ 
+  
+{
+  title: "Raider Analytics Dashboard",
+  description:
+    "Enterprise-style dashboard designed for data management, analytics visualization, and optimized state handling.",
+  longDescription:
+    "A scalable admin dashboard built with React and Zustand for efficient state management. Features dynamic data handling, dashboard widgets, charts, and responsive architecture for enterprise workflows.",
+  tech: ["React", "Node.js", "MongoDB", "Zustand"],
+  features: [
+    "Dashboard Analytics",
+    "State Management",
+    "Dynamic Data Rendering",
+    "Responsive Dashboard UI"
+  ],
+  image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
+},
+
+{
+  title: "ZenBeta Business Platform",
+  description:
+    "Modern business platform designed with scalable architecture and optimized user experiences using Next.js.",
+  longDescription:
+    "A responsive business website focused on performance, reusable components, and clean UI architecture. Built with a modern frontend approach emphasizing scalability and maintainability.",
+  tech: ["Next.js", "React", "Tailwind CSS", "TypeScript"],
+  features: [
+    "Responsive Layout",
+    "Reusable Components",
+    "SEO Optimization",
+    "Performance Optimization"
+  ],
+  image: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800",
+},
+{
+  title: "HardCash Financial Platform",
+  description:
+    "Interactive financial platform focused on responsive design and smooth user experiences.",
+  longDescription:
+    "Developed a modern business website with reusable UI components and user-focused design principles. The application prioritizes clean navigation, responsive layouts, and scalable frontend practices.",
+  tech: ["React", "Tailwind CSS", "JavaScript"],
+  features: [
+    "Responsive UI",
+    "Interactive Components",
+    "Modern User Experience",
+    "Reusable Architecture"
+  ],
+  image: "/images/hardcash.png",
+},
+{
+  title: "ProTax Service Platform",
+  description:
+    "Professional tax and business service platform built with a scalable and responsive frontend architecture.",
+  longDescription:
+    "Built a business-focused website emphasizing accessibility, clean design systems, and reusable component structures to deliver an intuitive user experience.",
+  tech: ["React", "Tailwind CSS", "JavaScript"],
+  features: [
+    "Responsive Design",
+    "Service Management UI",
+    "Reusable Components",
+    "Clean Navigation Flow"
+  ],
+  image: "/images/protax.png",
+},
 ];
 
 export const SKILLS: SkillGroups = {

@@ -1,4 +1,4 @@
-import { motion } from "motion/react";
+import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 
@@ -20,61 +20,170 @@ export function Navbar() {
     };
 
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+
+    return () =>
+      window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const closeMenu = () => setIsMenuOpen(false);
+
   return (
-    <nav
-      id="nav"
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-white/90 backdrop-blur-md border-b border-neutral-200 py-3 shadow-sm" : "bg-transparent py-5"
-      }`}
-    >
-      <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-        <div className="flex items-center gap-2">
-          <div className="w-8 h-8 bg-brand-blue rounded-lg flex items-center justify-center">
-            <span className="text-white font-bold text-lg leading-none">A</span>
+    <>
+      <nav
+        className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+          scrolled
+            ? "bg-white/95 backdrop-blur-md shadow-md py-3"
+            : "bg-transparent py-5"
+        }`}
+      >
+        <div className="max-w-7xl mx-auto px-5 flex items-center justify-between">
+
+          {/* Logo */}
+          <div className="flex items-center gap-2">
+            <div className="w-9 h-9 bg-brand-blue rounded-lg flex items-center justify-center">
+              <span className="text-white font-bold">A</span>
+            </div>
+
+            <span className="font-bold text-brand-dark text-lg">
+              Akshitha
+            </span>
           </div>
-          <span className="font-display font-bold text-xl tracking-tight hidden sm:block text-brand-dark">Akshitha</span>
-        </div>
 
-        <div className="hidden md:flex items-center gap-8 text-sm font-medium">
-          {NAV_LINKS.map((link) => (
-            <a key={link.href} href={link.href} className="hover:text-brand-blue transition-colors">
-              {link.label}
-            </a>
-          ))}
-          <button
-            id="contact-btn"
-            className="bg-white text-brand-blue px-5 py-2.5 rounded-full hover:bg-brand-blue hover:text-white transition-all duration-300 shadow-lg shadow-black/10 cursor-pointer text-sm font-bold"
-          >
-            Get in Touch
-          </button>
-        </div>
+          {/* Desktop */}
+          <div className="hidden lg:flex items-center gap-8">
 
-        <button className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label="Toggle menu">
-          {isMenuOpen ? <X /> : <Menu />}
-        </button>
-      </div>
+            {NAV_LINKS.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                className="hover:text-brand-blue"
+              >
+                {link.label}
+              </a>
+            ))}
 
-      {isMenuOpen && (
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="absolute top-full left-0 w-full bg-white border-b border-neutral-200 p-6 flex flex-col gap-4 md:hidden shadow-xl"
-        >
-          {NAV_LINKS.map((link) => (
             <a
-              key={link.href}
-              href={link.href}
-              onClick={() => setIsMenuOpen(false)}
-              className="text-lg font-medium text-brand-dark"
+              href="#contact"
+              className="bg-brand-blue text-white px-5 py-2 rounded-full"
             >
-              {link.label}
+              Get in Touch
             </a>
-          ))}
-        </motion.div>
-      )}
-    </nav>
+
+          </div>
+
+          {/* Mobile Button */}
+
+          <button
+            className="lg:hidden"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            {isMenuOpen ? <X /> : <Menu />}
+          </button>
+
+        </div>
+      </nav>
+
+      {/* Mobile Overlay */}
+
+<AnimatePresence>
+  {isMenuOpen && (
+    <>
+      {/* Background Overlay */}
+
+      <motion.div
+        className="fixed inset-0 bg-black/50 z-[90] lg:hidden"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        onClick={closeMenu}
+      />
+
+      {/* Mobile Menu */}
+
+      <motion.div
+        initial={{ x: "100%" }}
+        animate={{ x: 0 }}
+        exit={{ x: "100%" }}
+        transition={{ duration: 0.3 }}
+        className="
+        fixed
+        top-0
+        right-0
+        h-screen
+        w-[85%]
+        max-w-[320px]
+        bg-white
+        z-[100]
+        shadow-2xl
+        lg:hidden
+      "
+      >
+        <div className="h-full flex flex-col p-6">
+
+          {/* Header */}
+
+          <div className="flex justify-between items-center mb-8">
+
+            <span className="font-bold text-xl text-brand-dark">
+              Menu
+            </span>
+
+            <button onClick={closeMenu}>
+              <X size={28} />
+            </button>
+
+          </div>
+
+          {/* Links */}
+
+          <div className="flex flex-col gap-6">
+
+            {NAV_LINKS.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                onClick={closeMenu}
+                className="
+                text-lg
+                font-medium
+                text-brand-dark
+                hover:text-brand-blue
+                transition
+              "
+              >
+                {link.label}
+              </a>
+            ))}
+
+          </div>
+
+          {/* Bottom Button */}
+
+          <div className="mt-auto">
+
+            <a
+              href="#contact"
+              onClick={closeMenu}
+              className="
+              block
+              text-center
+              bg-brand-blue
+              text-white
+              py-3
+              rounded-xl
+              font-medium
+            "
+            >
+              Get in Touch
+            </a>
+
+          </div>
+
+        </div>
+      </motion.div>
+    </>
+  )}
+</AnimatePresence>
+    </>
   );
 }

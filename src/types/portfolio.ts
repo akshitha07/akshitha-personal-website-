@@ -12,6 +12,8 @@ export interface Project {
   features: string[];
   image: string;
   subCards?: ProjectSubCard[];
+  github?: string;
+  live?: string;
 }
 
 export interface AnalysisData {

@@ -12,7 +12,7 @@ export function DesignSystemSection() {
             <span className="text-brand-blue font-bold tracking-widest uppercase text-sm mb-6 block">
               Foundations
             </span>
-            <h2 className="text-5xl md:text-7xl font-bold text-brand-dark mb-8 leading-[0.9]">
+            <h2 className="text-5xl md:text-5xl font-bold text-brand-dark mb-8 leading-[0.9]">
               Systematic <br />Design Thinking
             </h2>
             <p className="text-xl text-gray-400 mb-10 leading-relaxed font-sans">
@@ -61,7 +61,7 @@ export function DesignSystemSection() {
                   <button className="px-6 py-3 bg-brand-blue text-white rounded-lg font-bold cursor-pointer">
                     Primary Action
                   </button>
-                  <button className="px-6 py-3 bg-white/10 text-white rounded-lg font-bold border border-white/20 cursor-pointer">
+                  <button className="px-6 py-3 bg-white/10 text-brand-blue rounded-lg font-bold border border-white/20 cursor-pointer">
                     Secondary
                   </button>
                   <button className="px-6 py-3 text-brand-blue font-bold hover:bg-brand-blue/10 rounded-lg transition-colors cursor-pointer">

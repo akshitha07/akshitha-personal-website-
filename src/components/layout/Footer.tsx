@@ -18,15 +18,19 @@ export function Footer() {
                 akshithamekala04@gmail.com
               </a>
               <div className="flex flex-wrap gap-x-8 gap-y-4 mt-4">
-                <a href="#" className="font-bold text-brand-gray hover:text-white text-sm">
+                <a href="https://www.linkedin.com/in/m-akshitha-36b69124b/" className="font-bold text-brand-gray hover:text-white text-sm">
                   LINKEDIN
                 </a>
-                <a href="#" className="font-bold text-brand-gray hover:text-white text-sm">
+                <a href=" https://github.com/akshitha07" className="font-bold text-brand-gray hover:text-white text-sm">
                   GITHUB
                 </a>
-                <a href="#" className="font-bold text-brand-gray hover:text-white text-sm">
-                  RESUME
-                </a>
+<a
+  href="/resume/Akshitha_Mekala_Resume.pdf"
+  download
+  className="font-bold text-brand-gray hover:text-white text-sm transition"
+>
+  RESUME
+</a>
               </div>
             </div>
           </div>

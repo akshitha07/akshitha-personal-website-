@@ -115,7 +115,7 @@ export function ProjectsSection({ onSelectProject }: ProjectsSectionProps) {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-6">
           <div className="max-w-2xl">
-            <h2 className="text-5xl md:text-7xl font-bold mb-6">Selected Case Studies</h2>
+            <h2 className="text-5xl md:text-xl font-bold mb-6">Selected Case Studies</h2>
             <p className="text-xl text-brand-gray font-sans">
               A deep dive into systems thinking, complex component architecture, and user-centric problem solving.
             </p>

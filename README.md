@@ -1,20 +1,135 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Akshitha Portfolio Website
 
-# Run and deploy your AI Studio app
+A modern and responsive portfolio website built to showcase frontend engineering projects, design-system thinking, UI development skills, and AI-assisted workflows.
 
-This contains everything you need to run your app locally.
+The application focuses on scalable architecture, reusable components, responsive layouts, and accessible user experiences.
 
-View your app in AI Studio: https://ai.studio/apps/f87a00e3-279f-496c-87eb-08fddea14235
+---
 
-## Run Locally
+## Features
 
-**Prerequisites:**  Node.js
+- Responsive design across all devices
+- Smooth animations and transitions
+- Project showcase with case studies
+- Skills and technology stack section
+- Design system workflow visualization
+- AI-assisted development workflow section
+- Resume download support
+- GitHub and social media integration
+- Accessibility-focused implementation
 
+---
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Tech Stack
+
+### Frontend
+- React
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- Vite
+
+### Tools & Platforms
+- Git
+- GitHub
+- VS Code
+- Figma
+
+---
+
+## Project Structure
+
+```txt
+src/
+├── components/
+├── data/
+├── lib/
+├── types/
+├── App.tsx
+├── index.css
+└── main.tsx
+
+Root
+├── .env.example
+├── metadata.json
+├── package.json
+├── vite.config.ts
+├── tsconfig.json
+└── README.md
+```
+
+---
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/akshitha07/portfolio.git
+```
+
+Navigate into the project directory:
+
+```bash
+cd portfolio
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start development server:
+
+```bash
+npm run dev
+```
+
+---
+
+## Build for Production
+
+```bash
+npm run build
+```
+
+---
+
+## Preview Production Build
+
+```bash
+npm run preview
+```
+
+---
+
+## Deployment
+
+This project can be deployed using:
+
+- Vercel
+- Netlify
+- GitHub Pages
+
+---
+
+## Future Improvements
+
+- Dynamic dashboard for content updates
+- Dark / Light theme support
+- Blog section
+- Analytics integration
+- Additional animations and interactions
+
+---
+
+## Author
+
+Akshitha Mekala
+
+GitHub:
+https://github.com/akshitha07
+
+LinkedIn:
+https://www.linkedin.com/in/m-akshitha-36b69124b/

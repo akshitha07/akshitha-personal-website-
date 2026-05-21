@@ -15,11 +15,9 @@
 .gradient-text {
   background: linear-gradient(
     135deg,
-    #4F46E5 0%,
-    #8B5CF6 30%,
-    #C084FC 60%,
-    #F9A8D4 85%,
-    #FFD6A5 100%
+   "#685fa7" 0,
+    "#c084fc" 60%,
+    "#f472b6" 100%
   );
 
   -webkit-background-clip: text;
