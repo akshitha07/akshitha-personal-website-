@@ -26,7 +26,7 @@ function ProjectCard({ project, index, onSelectProject }: ProjectCardProps) {
       >
         <div className="flex-1 relative z-10">
           <BorderGlow
-            className="w-full h-full"
+            className="w-full h-[400px]"
             glowColor="243 23 32"
             backgroundColor="transparent"
             borderRadius={32}
@@ -35,7 +35,7 @@ function ProjectCard({ project, index, onSelectProject }: ProjectCardProps) {
             animated={true}
             colors={["#685fa7", "#c084fc", "#f472b6"]}
           >
-            <div className="overflow-hidden rounded-[2rem] h-[400px] md:h-[500px] relative">
+            <div className="overflow-hidden rounded-[2rem] h-[400px] md:h-[400px] relative">
               <img
                 src={project.image}
                 alt={project.title}
@@ -124,7 +124,7 @@ export function ProjectsSection({ onSelectProject }: ProjectsSectionProps) {
             {["Design Systems", "SaaS UI", "AI Automation"].map((label) => (
               <div
                 key={label}
-                className="px-4 py-2 bg-neutral-900 border border-white/5 rounded-full text-xs uppercase tracking-wider text-brand-gray"
+                className="px-4 py-2 bg-brand-blue border border-white/5 rounded-full text-xs uppercase tracking-wider text-white"
               >
                 {label}
               </div>
