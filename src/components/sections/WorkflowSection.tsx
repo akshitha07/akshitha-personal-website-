@@ -115,15 +115,15 @@ export function WorkflowSection() {
                   <div className="absolute top-0 right-0 w-32 h-32 bg-brand-blue/5 rounded-full blur-3xl -mr-10 -mt-10 group-hover:bg-brand-blue/10 transition-colors" />
 
                   <div className="flex items-start justify-between mb-8 relative z-10">
-                    <div className="w-12 h-12 bg-neutral-800 rounded-xl flex items-center justify-center border border-white/10 group-hover:scale-110 transition-transform">
+                    <div className="w-12 h-12 bg-brand-blue/20 rounded-xl flex items-center justify-center border border-white/10 group-hover:scale-110 transition-transform">
                       <Icon size={24} className="text-brand-blue" />
                     </div>
-                    <span className="text-neutral-700 font-display font-bold text-4xl italic opacity-50 group-hover:text-brand-blue/20 transition-colors">
+                    <span className="text-brand-blue-40 font-display font-bold text-4xl italic opacity-50 ">
                       0{stage.id}
                     </span>
                   </div>
 
-                  <h4 className="text-xl font-bold text-white mb-4 group-hover:text-brand-blue transition-colors">
+                  <h4 className="text-xl font-bold text-brand-blue-20 mb-4 group-hover:text-brand-blue transition-colors">
                     {stage.title}
                   </h4>
                   <p className="text-sm text-brand-gray mb-6 leading-relaxed font-sans">{stage.desc}</p>
@@ -145,7 +145,7 @@ export function WorkflowSection() {
           })}
         </div>
 
-        <div className="mt-20 p-12 bg-neutral-50 rounded-[3rem] border border-neutral-200 relative overflow-hidden">
+        <div className="mt-20 p-12 bg-neutral-50 rounded-[3rem] border border-neutral-200 relative overflow-hidden hover:scale-105 transition-transform">
           <div className="absolute inset-0 bg-dot-grid opacity-20" />
           <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>

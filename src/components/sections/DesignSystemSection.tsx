@@ -4,7 +4,7 @@ export function DesignSystemSection() {
   return (
     <section
       id="design-system"
-      className="py-20 md:py-32 bg-neutral-50 text-brand-dark rounded-[3rem] mx-4 md:mx-10 px-6 border border-neutral-200"
+      className="py-20 md:py-15 bg-neutral-50 text-brand-dark rounded-[3rem] mx-4 md:mx-10 px-6 border border-neutral-200"
     >
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
@@ -12,10 +12,10 @@ export function DesignSystemSection() {
             <span className="text-brand-blue font-bold tracking-widest uppercase text-sm mb-6 block">
               Foundations
             </span>
-            <h2 className="text-5xl md:text-5xl font-bold text-brand-dark mb-8 leading-[0.9]">
+            <h2 className="text-5xl md:text-3xl font-bold text-brand-dark mb-8 leading-[0.9]">
               Systematic <br />Design Thinking
             </h2>
-            <p className="text-xl text-gray-400 mb-10 leading-relaxed font-sans">
+            <p className="text-lg text-gray-400 mb-10 leading-relaxed font-sans">
               I don't just build components; I build systems. Every interface is derived from a core set of
               design tokens, ensuring absolute consistency across 100+ screens.
             </p>
@@ -25,7 +25,7 @@ export function DesignSystemSection() {
                   <Layout className="text-brand-blue" />
                 </div>
                 <div>
-                  <h4 className="text-xl font-bold mb-2">Atomic Architecture</h4>
+                  <h4 className="text-lg font-bold mb-2">Atomic Architecture</h4>
                   <p className="text-gray-400">
                     Organized into Atoms, Molecules, and Organisms for maximum reusability.
                   </p>
@@ -36,7 +36,7 @@ export function DesignSystemSection() {
                   <Accessibility className="text-brand-blue" />
                 </div>
                 <div>
-                  <h4 className="text-xl font-bold mb-2">A11y First (WCAG 2.1)</h4>
+                  <h4 className="text-lg font-bold mb-2">A11y First (WCAG 2.1)</h4>
                   <p className="text-gray-400">
                     Strict adherence to contrast ratios, keyboard navigation, and ARIA patterns.
                   </p>
