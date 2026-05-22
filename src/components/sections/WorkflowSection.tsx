@@ -149,33 +149,51 @@ export function WorkflowSection() {
           <div className="absolute inset-0 bg-dot-grid opacity-20" />
           <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <h3 className="text-3xl font-bold text-white mb-6 italic">Workflow Philosophy</h3>
+              <h3 className="text-3xl font-bold text-brand-blue mb-6 italic">Workflow Philosophy</h3>
               <p className="text-brand-gray leading-relaxed mb-8">
                 Scalable frontend engineering is not only about writing code, but also about building structured,
                 reusable, accessible, and user-focused systems that evolved efficiently with product growth.
               </p>
               <div className="flex flex-wrap gap-4">
-                <div className="px-5 py-2.5 bg-neutral-900 border border-white/5 rounded-full flex items-center gap-2 text-sm font-bold text-white">
-                  <Monitor size={16} className="text-brand-blue" /> Cursor & Composer
+                <div className="px-5 py-2.5 bg-brand-blue border border-white/5 rounded-full flex items-center gap-2 text-sm font-bold text-white">
+                  <Monitor size={16} className="text-white" /> Cursor & Composer
                 </div>
-                <div className="px-5 py-2.5 bg-neutral-900 border border-white/5 rounded-full flex items-center gap-2 text-sm font-bold text-white">
-                  <Sparkles size={16} className="text-brand-blue" /> Agentic Pair Programming
+                <div className="px-5 py-2.5 bg-brand-blue border border-white/5 rounded-full flex items-center gap-2 text-sm font-bold text-white">
+                  <Sparkles size={16} className="text-white" /> Agentic Pair Programming
                 </div>
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-4">
-              {[
-                ["98%", "Code Consistency"],
-                ["Ax", "Accessibility Aware"],
-                ["2.5x", "Velocity Boost"],
-                ["100%", "Type Coverage"],
-              ].map(([value, label]) => (
-                <div key={label} className="p-6 bg-neutral-900 border border-white/5 rounded-2xl">
-                  <p className="text-2xl font-bold text-white mb-1">{value}</p>
-                  <p className="text-xs font-bold text-brand-gray uppercase tracking-widest">{label}</p>
-                </div>
-              ))}
-            </div>
+<div className="grid grid-cols-2 gap-4">
+  {[
+    ["98%", "Code Consistency"],
+    ["Ax", "Accessibility Aware"],
+    ["2.5x", "Velocity Boost"],
+    ["100%", "Type Coverage"],
+  ].map(([value, label]) => (
+    <div
+      key={label}
+      className="
+      p-6
+      bg-brand-blue
+      backdrop-blur-xl
+      border border-brand-blue
+      rounded-2xl
+      shadow-[0_8px_32px_rgba(104,95,167,0.25)]
+      hover:scale-105
+      transition-all
+      duration-300
+      "
+    >
+      <p className="text-2xl font-bold text-white mb-1">
+        {value}
+      </p>
+
+      <p className="text-xs font-bold text-white/50 uppercase tracking-widest">
+        {label}
+      </p>
+    </div>
+  ))}
+</div>
           </div>
         </div>
       </div>

@@ -44,12 +44,14 @@ export function HeroSection() {
         </p>
 
         <div className="flex flex-wrap gap-4">
-          <button
-            id="view-work-btn"
-            className="px-8 py-4 bg-brand-blue text-white rounded-xl font-semibold text-lg flex items-center gap-2 hover:opacity-90 hover:scale-[1.02] transition-all shadow-xl shadow-brand-blue/20"
-          >
-            View Case Studies <ChevronRight size={20} />
-          </button>
+<a
+  href="#projects"
+  id="view-work-btn"
+  className="px-8 py-4 bg-brand-blue text-white rounded-xl font-semibold text-lg flex items-center gap-2 hover:opacity-90 hover:scale-[1.02] transition-all shadow-xl shadow-brand-blue/20"
+>
+  View Projects
+  <ChevronRight size={20} />
+</a>
 
 <div className="flex items-center gap-4 px-6 py-4 bg-neutral-100 rounded-xl border border-neutral-200">
 

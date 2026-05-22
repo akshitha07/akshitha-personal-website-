@@ -36,7 +36,7 @@ export function JourneySection() {
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   className="relative pl-12 group"
                 >
-                  <div className="absolute left-0 top-1 w-9 h-9 rounded-full bg-black border-4 border-brand-blue z-10 shadow-sm transition-transform group-hover:scale-110" />
+                  <div className="absolute left-0 top-1 w-9 h-9 rounded-full bg-brand-blue/50 border-4 border-brand-blue z-10 shadow-sm transition-transform group-hover:scale-110" />
                   <span className="text-sm font-bold text-brand-blue uppercase tracking-widest font-sans mb-2 block">
                     {item.date}
                   </span>
@@ -48,7 +48,7 @@ export function JourneySection() {
                     {item.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="px-3 py-1 bg-neutral-900 border border-white/5 rounded-full text-[10px] font-bold uppercase tracking-wider text-brand-gray"
+                        className="px-3 py-1 bg-brand-blue/50 border border-brand-blue rounded-full text-[10px] font-bold uppercase tracking-wider text-brand-gray"
                       >
                         {tag}
                       </span>
